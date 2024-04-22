@@ -16,7 +16,8 @@ def check_login_whatsapp() -> None:
     """
     logger.info("Checking WhatsApp login.")
     web.open("https://web.whatsapp.com/")
-    time.sleep(7)  # Waiting for the page to load completely.
+    time.sleep(7)  # Waiting for the page to load completely. traducir a español por favor :D 
+    
 
     # Try to locate the image 'check.png' on the screen.
     try:

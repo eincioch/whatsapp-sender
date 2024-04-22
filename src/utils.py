@@ -47,13 +47,17 @@ def format_message_base(original_message: str, data: pd.Series or pd.DataFrame):
 
     result = original_message
     placeholders = re.findall(r"\{([^}]+)\}", original_message)
+    print(placeholders)
     variable_names = [var.strip() for var in placeholders]
+    print(variable_names)
     for var_name in variable_names:
         if isinstance(data, pd.DataFrame):
             var_value = data.loc[0, var_name]
         else:  # Asume que data es una serie (fila del DataFrame)
             var_value = data[var_name]
+        print(var_value)
         result: str = result.replace("{" + var_name + "}", str(var_value))
+        print(result)
     return result
 
 

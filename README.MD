@@ -18,7 +18,9 @@ WhatsApp-Sender is a desktop application designed to automate the sending of Wha
 1. Clone the WhatsApp-Sender repository to your local machine.
 2. Install the necessary dependencies by running 
 ```bash 
-pip install -r requirements.txt
+pip install -r requirements.txt 
+```windows 
+py -m pip install -r requirements.txt   
 ```
 3. Run the application with 
 ```bash 
